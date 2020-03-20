@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link href="{{ asset('/css/templatemo_style.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/jquery.ennui.contentslider.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ absolute_url('favicon.ico') }}" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="templatemo_menu_wrapper">
+            <div id="templatemo_menu">
+                <ul id="main_menu">
+                    <li class="active"><a href="{{ path('main_page')}}">Главная</a></li>
+                    <li><a href="/services">Услуги</a></li>
+                    <li><a href="/portraits">Галлерея</a></li>
+                    <li><a href="/students">Студенты</a></li>
+                    <li><a href="/exhibitions">Выставки</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="templatemo_header_wrapper">
+            <div id="templatemo_header">
+                <div id="site_title">
+                    <h1><a href="{{ path('main_page')}}"> <img src="{{ asset('images/templatemo_logo.png') }}" alt="logo" /> </a></h1>
+                </div>
+                <div id="templatemo_slider">
+                    <div id="one" class="contentslider">
+                        <div class="cs_wrapper">
+                            <div class="cs_slider">
+                                <div class="cs_article">
+                                    <a href="#" target="_parent">
+                                        <img src="{{ asset('images/slider/tv.jpg') }}" alt="Project 1" /></a>
+                                </div>
+                                <div class="cs_article">
+                                    <a href="#" target="_parent">
+                                        <img src="{{ asset('images/slider/Sl2.jpg') }}" alt="Project 2" /></a>
+                                </div>
+                                <div class="cs_article">
+                                    <a href="#" target="_parent">
+                                        <img src="{{ asset('images/slider/sl5.jpg') }}" alt="Project 3" /></a>
+                                </div>
+                                <div class="cs_article">
+                                    <a href="#" target="_parent">
+                                        <img src="{{ asset('images/slider/sl4.jpg') }}" alt="Project 4" /></a>
+                                </div>
+                                <div class="cs_article">
+                                    <a href="#" target="_parent">
+                                        <img src="{{ asset('images/slider/Sl3.jpg') }}images/slider/Sl3.jpg" alt="Project 5" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cleaner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div id="templatemo_footer_wrapper">
+                <div id="templatemo_footer">
+                    <div class="footer_box">
+                        <div class="footer_menu">
+                            <h3>О нас</h3>
+                            <img src="{{ asset('images/templatemo_image_04.jpg') }}" alt="About Us" />
+                            <p>
+                                Перед тобой открыла двери самая необычная и удивительная «Академия живописи и рисунка».
+                            </p>
+                            <div class="button"><a href="site/studio"></a></div>
+                        </div>
+                    </div>
+                    <div class="footer_box">
+                        <div class="footer_menu">
+                            <h3>Навигация</h3>
+                            <ul class="footer_menu">
+                                <li><a href="<?= Url::to(['site/index']) ?>">Главная</a></li>
+                                <li><a href="<?= Url::to(['site/studio']) ?>">О нас</a></li>
+                                <li><a href="<?= Url::to(['site/services']) ?>">Услуги</a></li>
+                                <li><a href="<?= Url::to(['site/portraits']) ?>">Галлерея</a></li>
+                                <li><a href="<?= Url::to(['site/contacts']) ?>">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_box">
+                        <h3>Полезные ссылки</h3>
+                        <ul class="footer_menu">
+                            <li><a href="http://arts.in.ua/" target="_parent">arts.in.ua</a></li>
+                            <li><a href="http://www.artcontext.info/" target="_parent">ARTcontext</a></li>
+                            <li><a href="http://www.artukraine.com.ua/" target="_parent">ART UKRAINE</a></li>
+                            <li><a href="http://www.deviantart.com/" target="_parent">deviantART</a></li>
+                        </ul>
+                    </div>
+                    <div class="cleaner"></div>
+                </div>
+            </div>
+
+            <div id="templatemo_copyright_wrapper">
+                <div id="templatemo_copyright">
+                    Copyright © {{ "now"|date('Y') }} <a href="#">Xoma55</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ asset('/js/jquery.js') }}"></script>
+    <script src="{{ asset('/js/jquery.easing.1.3.js') }}"></script>
+    <script src="{{ asset('/js/jquery.ennui.contentslider.js') }}"></script>
+    <script src="{{ asset('/js/main.js') }}"></script>
+</body>
+</html>

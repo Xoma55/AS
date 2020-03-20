@@ -1,0 +1,51 @@
+{% extends "main.html.twig" %}
+
+{% block main_menu %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="site-index">
+        <div id="templatemo_top_row_wrapper">
+            <div id="templatemo_top_row">
+                <div class="top_row_box">
+                    <h5>Добро пожаловать в нашу студию</h5>
+                    <p></p>
+                    <br>
+                    <div class="button"><a href="<?= Url::to(['site/studio']) ?>"></a></div>
+                </div>
+                <div class="top_row_box">
+                    <h5>Наши студенты</h5>
+                    <p>Арт-студия открывает свои двери всем желающим научится рисовать. </p>
+                    <div class="button"><a href="<?= Url::to(['site/students']) ?>"></a></div>
+                </div>
+                <div class="top_row_box last">
+                    <h5>Подготовка к художественно-графическим вузам </h5>
+                    <p></p>
+                    <p> </p>
+                    <p> </p>
+                    <div class="button"><a href="<?= Url::to(['site/prepare']) ?>"></a></div>
+                </div>
+                <div class="cleaner"></div>
+            </div>
+        </div>
+
+        <div id="templatemo_content_wrapper">
+            <div id="templatemo_content">
+                <h2>Искусство требует знаний</h2>
+                <div class="image_wrapper fl_img">
+                    <a href="#"><img src="images/templatemo_image_02.jpg" alt="image" /></a>
+                </div>
+                <br>
+                <h5>Художник думает рисунком. (Сальвадор Дали)</h5>
+                <br>
+                <p>Живописец не должен быть универсальным. </p>
+                <p>Живопись - молчащая поэзия, а поэзия - звучащая живопись.</p>
+                <p>Живопись - наружно так проста, что уму нельзя не обмануться, но к интимной пластике холста можно только чувством прикоснуться.
+                <div class="cleaner"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
